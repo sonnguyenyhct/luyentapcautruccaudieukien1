@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+    <script>
+        /*Từ 0 đến 200.000 => 3%
+        Từ 200.000 đến 500.000 => 5%
+        Trên 500.000 => 10%*/
+        let a = parseInt(prompt("Hoá đơn có giá trị là (đ): "));
+        if (a>0 && a <= 200000 ){
+            alert("Hoa hồng là : " + 0.03*a + " đ.");
+        }else if(200000 < a && a <= 500000){
+            let b = 0.03*200000 + 0.05*(a - 200000);
+            alert("Hoa hồng là : " + b + " đ.");
+        }else if(a > 500000){
+            let b = 0.03*200000 + 0.05*(500000-200000) + 0.1*(a - 500000);
+            alert("Hoa hồng là : " + b + " đ.");
+        }
+    </script>
+</body>
+</html>

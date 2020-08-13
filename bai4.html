@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập số nguyên a :"));
+        let b = parseFloat(prompt("Nhập số nguyên b :"));
+        let c = parseFloat(prompt("Nhập số nguyên c :"));
+        if ( Number.isInteger(a) === true && Number.isInteger(b) === true && Number.isInteger(c) === true){
+            if (a > b){
+                if (a > c){
+                    alert("Giá trị lớn nhất là :" + a);
+                }else {
+                    alert("Giá trị lớn nhất là :" + c);
+                }
+            } else if (b > c){
+                alert("Giá trị lớn nhất là :" + b);
+            }else {
+                alert("Giá trị lớn nhất là :" + c);
+            }
+        }else {
+            alert("Hãy nhập số nguyên");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Điểm bài kiểm tra :"));
+        let b = parseFloat(prompt("Điểm thi giữa kì :"));
+        let c = parseFloat(prompt("Điểm thi cuối kì :"));
+        let DTB = (a + 2*b + 3*c)/6;
+        if (9 <= DTB < 10 ){
+            alert("Xếp loại giỏi");
+        }else if (7 <= DTB < 9){
+            alert("Xếp loại khá");
+        }else if (5 <= DTB < 7){
+            alert("Xếp loại trung bình");
+        }else if(0 <= DTB < 5){
+            alert("Xếp loại yếu");
+        }else {
+            alert("Điểm không hợp lệ");
+        }
+    </script>
+</body>
+</html>

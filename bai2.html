@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập vào số tuổi :"));
+        if (Number.isInteger(a) === true && 0 < a < 16){
+            alert("Chưa đủ tuổi");
+        }else if (Number.isInteger(a) === true && a > 16){
+            alert("Đã đủ tuổi");
+        }else {
+            alert("Hãy nhập số tuổi đúng");
+        }
+    </script>
+</body>
+</html>

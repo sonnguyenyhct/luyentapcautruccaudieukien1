@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+    <script>
+       let a = parseInt(prompt("Nhập số phút gọi"));
+       if (a < 50){
+           b = 25000 + 600*a;
+           alert("Cước điện thoại là :" + b + " đ.");
+       }else if (a => 50 && a < 150){
+           c = 25000 + 600*50 + (a - 50)*400;
+           alert("Cước điện thoại là :" + c + " đ.")
+       }else {
+           d = 25000 + 600*50 + 100*400 + (a - 150)*200;
+           alert("Cước điện thoại là :" + d + " đ.")
+       }
+    </script>
+</body>
+</html>
